@@ -1,0 +1,4 @@
+; Put in /usr/share/xsessions/custom.desktop
+[Desktop Entry]
+Name=Xsession
+Exec=/etc/X11/Xsession
