@@ -1,0 +1,30 @@
+[submodule "home/.vim/bundle/AfterColors.vim"]
+	path = home/.vim/bundle/AfterColors.vim
+	url = https://github.com/vim-scripts/AfterColors.vim.git
+[submodule "home/.vim/bundle/a.vim"]
+	path = home/.vim/bundle/a.vim
+	url = https://github.com/vim-scripts/a.vim.git
+[submodule "home/.vim/bundle/delimitMate"]
+	path = home/.vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "home/.vim/bundle/bufexplorer"]
+	path = home/.vim/bundle/bufexplorer
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "home/.vim/bundle/matchit"]
+	path = home/.vim/bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "home/.vim/bundle/nerdtree"]
+	path = home/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "home/.vim/bundle/snipmate.vim"]
+	path = home/.vim/bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "home/.vim/bundle/vim-markdown"]
+	path = home/.vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "home/.vim/bundle/vim-surround"]
+	path = home/.vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "home/.vim/bundle/grep.vim"]
+	path = home/.vim/bundle/grep.vim
+	url = https://github.com/vim-scripts/grep.vim.git
