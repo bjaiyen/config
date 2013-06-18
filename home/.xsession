@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 
-gnome-power-manager &     # power management
-gnome-settings-daemon &   # themes, gnome-screensaver
-gnome-volume-manager &    # mounting volumes
+gnome-settings-daemon &   # themes, screensaver, power management
 exec i3
