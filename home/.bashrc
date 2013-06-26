@@ -15,10 +15,10 @@
   alias du='du -h'
 
   # Some shortcuts for different directory listings
-  alias ls='ls -hF --color=auto'  # Classify files in color
-  alias ll='ls -l --color=auto'   # Long list
-  alias la='ls -A --color=auto'   # All but . and ..
-  alias lla='ls -lA --color=auto' # Prev two options combined
+  alias ls='ls -hF  --color=auto --group-directories-first' # Classify in color
+  alias ll='ls -l   --color=auto --group-directories-first' # Long list
+  alias la='ls -A   --color=auto --group-directories-first' # All but . and ..
+  alias lla='ls -lA --color=auto --group-directories-first' # Prev two combined
 
   # Interactive mode
   alias cp='cp -i'
