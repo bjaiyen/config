@@ -10,3 +10,9 @@ defscrollback 10000
 # Always show screen status
 hardstatus alwayslastline
 hardstatus string '%{= KW}%-Lw%{= yk}%50>%n%f* %t%{= KW}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+
+# Start window numbering at 1
+bind c screen 1
+bind ^c screen 1
+bind 0 select 10
+screen 1
