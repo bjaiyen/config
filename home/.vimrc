@@ -121,6 +121,9 @@
   " Buffer switching
   nnoremap <silent> <C-J> :bp<CR>
   nnoremap <silent> <C-K> :bn<CR>
+
+  " Open quickfix selection in vertical split and close quickfix window
+  autocmd FileType qf nnoremap <buffer><silent> <CR> <C-W><CR><C-W>L:ccl<CR>
 " }
 
 " Plugins {
