@@ -28,3 +28,6 @@
 [submodule "home/.vim/bundle/grep.vim"]
 	path = home/.vim/bundle/grep.vim
 	url = https://github.com/vim-scripts/grep.vim.git
+[submodule "home/.vim/bundle/vim-togglelist"]
+	path = home/.vim/bundle/vim-togglelist
+	url = https://github.com/milkypostman/vim-togglelist.git
