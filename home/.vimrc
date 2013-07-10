@@ -122,7 +122,7 @@
   nnoremap <silent> <C-H> :bp<CR>
   nnoremap <silent> <C-J> :bn<CR>
 
-  " Open quickfix selection in vertical split and close quickfix window
+  " Open quickfix selection in vertical split
   autocmd FileType qf nnoremap <buffer><silent> <CR> <C-W><CR><C-W>L
 " }
 
