@@ -122,8 +122,10 @@
   nnoremap <silent> <C-H> :bp<CR>
   nnoremap <silent> <C-J> :bn<CR>
 
-  " Open quickfix selection in vertical split and close quickfix window
-  autocmd FileType qf nnoremap <buffer><silent> <CR> <C-W><CR><C-W>L:ccl<CR>
+  " Open quickfix selection (in split) and close quickfix window
+  au FileType qf nnoremap <buffer><silent> <CR> <CR>:ccl<CR>
+  au FileType qf nnoremap <buffer><silent> <C-W><CR> <C-W><CR>:ccl<CR>
+  au FileType qf nnoremap <buffer><silent> <leader><CR> <C-W><CR><C-W>L:ccl<CR>
 " }
 
 " Plugins {
