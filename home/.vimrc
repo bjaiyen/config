@@ -119,11 +119,11 @@
   nnoremap <silent> <F7> :setlocal spell! spelllang=en_us<CR>
 
   " Buffer switching
-  nnoremap <silent> <C-J> :bp<CR>
-  nnoremap <silent> <C-K> :bn<CR>
+  nnoremap <silent> <C-H> :bp<CR>
+  nnoremap <silent> <C-J> :bn<CR>
 
   " Open quickfix selection in vertical split and close quickfix window
-  autocmd FileType qf nnoremap <buffer><silent> <CR> <C-W><CR><C-W>L:ccl<CR>
+  autocmd FileType qf nnoremap <buffer><silent> <CR> <C-W><CR><C-W>L
 " }
 
 " Plugins {
