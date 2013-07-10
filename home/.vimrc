@@ -132,6 +132,6 @@
   let NERDTreeQuitOnOpen=1          " Quit NERDTree after opening file
 
   " Search for word under the cursor
-  nnoremap <silent> <F3> :Grep<CR><CR><CR>
+  nnoremap <silent> <C-G> :Grep<CR><CR><CR>
   let Grep_Default_Options='-Irnis' " Default options for grep
 " }
