@@ -31,3 +31,4 @@
 [submodule "home/.vim/bundle/vim-togglelist"]
 	path = home/.vim/bundle/vim-togglelist
 	url = https://github.com/milkypostman/vim-togglelist.git
+  ignore = dirty
