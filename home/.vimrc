@@ -16,6 +16,7 @@
   set backspace=indent,eol,start    " Fix backspace
   set hidden                        " Lets you switch buffers w/out saving
   set history=1000                  " Keep longer history
+  set showmode                      " Show which mode you are in (e.g. paste)
 
   " Makes vim autocomplete behave like bash autocomplete
   set wildmenu
@@ -114,6 +115,10 @@
 " Keymap {
   " Map ctrl-j to right arrow in insert mode
   inoremap <silent> <C-J> <RIGHT>
+
+  " Toggle paste and show current mode
+  nnoremap <F2> :set invpaste paste?<CR>
+  set pastetoggle=<F2>
 
   " Toggle spellcheck
   nnoremap <silent> <F7> :setlocal spell! spelllang=en_us<CR>
