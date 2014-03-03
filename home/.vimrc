@@ -116,9 +116,6 @@
   " Map ctrl-j to right arrow in insert mode
   inoremap <silent> <C-J> <RIGHT>
 
-  " Auto indent bracket
-  inoremap {{ {<CR>}<ESC>ko
-
   " Toggle paste and show current mode
   nnoremap <F2> :set invpaste paste?<CR>
   set pastetoggle=<F2>
@@ -130,8 +127,8 @@
   nnoremap <silent> <C-H> :bp<CR>
   nnoremap <silent> <C-J> :bn<CR>
 
-  " Copy to 'clipboard registry'
-  vnoremap <silent> <C-C> "*y
+  " Auto indent bracket
+  inoremap {{ {<CR>}<ESC>ko
 
   " Open quickfix selection (in split) and close quickfix window
   au FileType qf nnoremap <buffer><silent> <CR> <CR>:ccl<CR>
