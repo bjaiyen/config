@@ -27,7 +27,6 @@
 
   # Misc
   alias go='gnome-open'
-  alias vim='vim'
   alias vim2='vim -O2'
 # }
 
