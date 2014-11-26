@@ -116,7 +116,7 @@
   " Map ctrl-j to right arrow in insert mode
   inoremap <silent> <C-J> <RIGHT>
 
-  " Toggle paste and show current mode
+  " Toggle paste
   nnoremap <F2> :set invpaste paste?<CR>
   set pastetoggle=<F2>
 
