@@ -35,7 +35,7 @@
 " Appearance {
   colorscheme desert                " Set colorscheme
   set background=dark               " Tell vim background is dark
-  set colorcolumn=81                " Show red column at 81 characters
+  set colorcolumn=80                " Show red column at 80 characters
   set laststatus=2                  " Always show status line
   set number                        " Line numbers
   set splitright                    " Create new split window on right side
