@@ -1,5 +1,5 @@
 # Load {
-# Source .bash_aliases if it exists
+  # Source .bash_aliases if it exists
   if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
   fi
