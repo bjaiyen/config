@@ -1,6 +1,6 @@
 setlocal nocindent
-setlocal nosmartindent
 setlocal shiftwidth=4
+setlocal nosmartindent
 setlocal softtabstop=4
 setlocal tabstop=4
 
