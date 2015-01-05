@@ -25,9 +25,6 @@
 [submodule "vim-markdown"]
 	path = home/.vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
-[submodule "vim-pathogen"]
-	path = home/.vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim-surround"]
 	path = home/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
@@ -35,3 +32,6 @@
 	path = home/.vim/bundle/vim-togglelist
 	url = https://github.com/milkypostman/vim-togglelist.git
   ignore = dirty
+[submodule "vim-pathogen"]
+	path = home/.vim/bundle/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
