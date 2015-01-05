@@ -1,5 +1,8 @@
 " Bookkeeping {
-  call pathogen#infect()            " Enable easier runtimepath management
+  " Enable easier runtimepath management
+  runtime bundle/vim-pathogen/autoload/pathogen.vim
+  call pathogen#infect()
+
   set nobackup                      " On file override, replace old backup
   set backupdir=~/.vim/backup       " Backup files location
   set directory=~/.vim/swap         " Directory for swap files
@@ -91,8 +94,8 @@
 " }
 
 " Folding {
-  set nofoldenable                  " Fold by default
-  set foldignore=                   " Line start with chars use nearby fold lvl
+  set nofoldenable                  " Don't fold by default
+  set foldignore=                   " Ignore default nearby folding with #
   set foldlevel=1                   " Default fold level
   set foldmethod=indent             " Fold based on indent
   set foldnestmax=10                " Deepest fold is 10 levels
