@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# Run in ~
-# E.g. $ ~/Dropbox/prog/config/home/setup.sh
-
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo "Running $SCRIPT_DIR"
+cd ~
 for file in $(ls -a "$SCRIPT_DIR")
 do
   if [ "$file" = "$(basename $0)" ]
