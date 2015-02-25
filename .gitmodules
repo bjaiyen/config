@@ -1,33 +1,43 @@
 [submodule "AfterColors.vim"]
 	path = home/.vim/bundle/AfterColors.vim
 	url = https://github.com/vim-scripts/AfterColors.vim.git
+  ignore = dirty
 [submodule "a.vim"]
 	path = home/.vim/bundle/a.vim
 	url = https://github.com/vim-scripts/a.vim.git
+  ignore = dirty
 [submodule "bufexplorer"]
 	path = home/.vim/bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
+  ignore = dirty
 [submodule "delimitMate"]
 	path = home/.vim/bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+  ignore = dirty
 [submodule "grep.vim"]
 	path = home/.vim/bundle/grep.vim
 	url = https://github.com/vim-scripts/grep.vim.git
+  ignore = dirty
 [submodule "matchit"]
 	path = home/.vim/bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
+  ignore = dirty
 [submodule "nerdtree"]
 	path = home/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+  ignore = dirty
 [submodule "snipmate.vim"]
 	path = home/.vim/bundle/snipmate.vim
 	url = https://github.com/msanders/snipmate.vim.git
+  ignore = dirty
 [submodule "vim-markdown"]
 	path = home/.vim/bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
+  ignore = dirty
 [submodule "vim-surround"]
 	path = home/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+  ignore = dirty
 [submodule "vim-togglelist"]
 	path = home/.vim/bundle/vim-togglelist
 	url = https://github.com/milkypostman/vim-togglelist.git
@@ -35,3 +45,8 @@
 [submodule "vim-pathogen"]
 	path = home/.vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+  ignore = dirty
+[submodule "home/.vim/bundle/syntastic"]
+	path = home/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+  ignore = dirty
