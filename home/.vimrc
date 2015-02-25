@@ -147,15 +147,19 @@
   " Search for word under the cursor
   nnoremap <silent> <C-G> :Grep<CR><CR><CR>
   let Grep_Default_Options='-Irnis' " Default options for grep
+" }
 
+" Syntastic {
+  " Add error message to status line
   set statusline+=%#warningmsg#
   set statusline+=%{SyntasticStatuslineFlag()}
   set statusline+=%*
 
+  " Let syntastic put errors in location-list
   let g:syntastic_always_populate_loc_list = 1
-  let g:syntastic_auto_loc_list = 1
-  let g:syntastic_check_on_open = 1
-  let g:syntastic_check_on_wq = 0
+  let g:syntastic_auto_loc_list = 1 " Enable location-list automatically
+  let g:syntastic_check_on_open = 1 " Check syntax on Buffer open
+  let g:syntastic_check_on_wq = 0   " Check syntax on Buffer write
 " }
 
 " Cygwin {
