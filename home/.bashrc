@@ -50,3 +50,7 @@
   export HISTSIZE=10000         # History buffer size
   export HISTCONTROL=ignoredups # Remove consecutive duplicate commands in hist
 # }
+
+# OS X {
+  export CLICOLOR=1
+# }
