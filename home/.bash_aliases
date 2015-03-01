@@ -15,16 +15,25 @@ alias df='df -h'
 alias du='du -h'
 
 # Directory listing
-alias ls='ls -hF  --color=auto --group-directories-first' # Classify in color
-alias ll='ls -l   --color=auto --group-directories-first' # Long list
-alias la='ls -A   --color=auto --group-directories-first' # All but . and ..
-alias lla='ls -lA --color=auto --group-directories-first' # Prev two combined
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  alias ls='ls -hF  --color=auto --group-directories-first'  # Classify in color
+  alias lla='ls -lA --color=auto --group-directories-first'  # Long list all
+else
+  alias ls='ls -hF'   # Classify in color
+  alias lla='ls -lA'  # Long list all
+fi
 
 # Interactive mode
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -I'
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  alias rm='rm -I'
+else
+  alias rm='rm -i'
+fi
 
 # Misc
-alias go='gnome-open'
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  alias go='gnome-open'
+fi
 alias vim2='vim -O2'
