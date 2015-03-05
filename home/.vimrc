@@ -1,8 +1,35 @@
-" Bookkeeping {
-  " Enable easier runtimepath management
-  runtime bundle/vim-pathogen/autoload/pathogen.vim
-  call pathogen#infect()
+" Vundle {
+  set nocompatible              " be iMproved, required
+  filetype off                  " required
 
+  " set the runtime path to include Vundle and initialize
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
+  " alternatively, pass a path where Vundle should install plugins
+  "call vundle#begin('~/some/path/here')
+
+  " let Vundle manage Vundle, required
+  Plugin 'gmarik/Vundle.vim'
+
+  " Keep Plugin commands between vundle#begin/end.
+  Plugin 'milkypostman/vim-togglelist'
+  Plugin 'Raimondi/delimitMate'
+  Plugin 'scrooloose/nerdtree'
+  Plugin 'scrooloose/syntastic'
+  Plugin 'tpope/vim-markdown'
+  Plugin 'tpope/vim-surround'
+  Plugin 'vim-scripts/AfterColors.vim'
+  Plugin 'vim-scripts/a.vim'
+  Plugin 'vim-scripts/bufexplorer.zip'
+  Plugin 'vim-scripts/grep.vim'
+  Plugin 'vim-scripts/matchit.zip'
+
+  " All of your Plugins must be added before the following line
+  call vundle#end()            " required
+  filetype plugin indent on    " required
+" }
+
+" Bookkeeping {
   set nobackup                      " On file override, replace old backup
   set backupdir=~/.vim/backup       " Backup files location
   set directory=~/.vim/swap         " Directory for swap files
