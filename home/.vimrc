@@ -10,7 +10,7 @@
 
   " Keep Plugin commands between vundle#begin/end
   Plugin 'Raimondi/delimitMate'
-  Plugin 'Valloric/YouCompleteMe'
+  "Plugin 'Valloric/YouCompleteMe'
   Plugin 'milkypostman/vim-togglelist'
   Plugin 'scrooloose/nerdtree'
   Plugin 'scrooloose/syntastic'
