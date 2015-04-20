@@ -50,7 +50,7 @@
   set wildmode=list:longest
 
   " The following simply creates an ambiguous mapping so vim fully processes the
-  " escape sequence for terminal keys, see 'ttimeout' for a rough explanation. 
+  " escape sequence for terminal keys, see 'ttimeout' for a rough explanation.
   " This is used to fix plugins that map <ESC> in order to fix arrow key
   " key-maps that look like OC and execute as three commands.
   if &term[:4] == "xterm" || &term[:5] == "screen"
@@ -132,7 +132,7 @@
   set ignorecase                    " Ignore case while searching
   set incsearch                     " Incremental searching
   set smartcase                     " Cap letter means pattern is case sensitive
-  set tags=./tags;                  " Search ./ then upwards until root for tags 
+  set tags=./tags;                  " Search ./ then upwards until root for tags
 
   " Follow `smartcase` when searching using * or #
   "nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
