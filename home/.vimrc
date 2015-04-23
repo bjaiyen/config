@@ -162,7 +162,7 @@
 
 " Plugins {
   " Toggle NERDTree
-  nnoremap <silent> <C-N> :NERDTreeToggle %<CR>
+  nnoremap <silent> <C-N> :NERDTreeFind<CR>
   let NERDTreeShowHidden=1          " Show hidden files
   let NERDTreeQuitOnOpen=1          " Quit NERDTree after opening file
 
