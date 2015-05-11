@@ -11,7 +11,6 @@
   " Keep Plugin commands between vundle#begin/end
   Plugin 'Raimondi/delimitMate'
   "Plugin 'Valloric/YouCompleteMe'
-  Plugin 'bling/vim-airline'
   Plugin 'kien/ctrlp.vim'
   Plugin 'milkypostman/vim-togglelist'
   Plugin 'scrooloose/nerdtree'
@@ -68,7 +67,6 @@
   set laststatus=2                  " Always show status line
   set number                        " Line numbers
   set splitright                    " Create new split window on right side
-  set t_Co=256                      " Enable 256 colors
   syntax enable                     " Syntax highlight w/out overriding current
 
   " Highlight whitespace at eol
@@ -155,13 +153,6 @@
     let &t_EI.="\e[1 q"
     let &t_te.="\e[0 q"
   endif
-" }
-
-" Airline/Bufferline {
-  let g:airline_powerline_fonts=1
-  let g:airline_section_a=''
-  let g:airline_theme='badwolf'
-  let g:airline#extensions#tabline#enabled=1
 " }
 
 " NERDTree {
