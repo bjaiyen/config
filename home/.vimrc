@@ -11,17 +11,17 @@
   " Keep Plugin commands between vundle#begin/end
   Plugin 'Raimondi/delimitMate'
   "Plugin 'Valloric/YouCompleteMe'
-  Plugin 'bling/vim-bufferline'
+  Plugin 'bling/vim-airline'
   Plugin 'kien/ctrlp.vim'
   Plugin 'milkypostman/vim-togglelist'
   Plugin 'scrooloose/nerdtree'
   Plugin 'scrooloose/syntastic'
+  Plugin 'tpope/vim-fugitive'
   Plugin 'tpope/vim-markdown'
   Plugin 'tpope/vim-surround'
   Plugin 'vim-scripts/AfterColors.vim'
   Plugin 'vim-scripts/a.vim'
   Plugin 'vim-scripts/bufexplorer.zip'
-  Plugin 'vim-scripts/grep.vim'
   Plugin 'vim-scripts/matchit.zip'
 
   call vundle#end()            " required
@@ -62,6 +62,7 @@
 " }
 
 " Appearance {
+  set t_Co=256                      " Enable 256 colors
   colorscheme desert                " Set colorscheme
   set background=dark               " Tell vim background is dark
   set colorcolumn=80                " Show red column at 80 characters
@@ -69,16 +70,6 @@
   set number                        " Line numbers
   set splitright                    " Create new split window on right side
   syntax enable                     " Syntax highlight w/out overriding current
-
-  set statusline=%F%=[%{&ff}]%y[%02p%%][%L][%04l,%04v]
-  "              |    |      |  |       |   |    |
-  "              |    |      |  |       |   |    + current column
-  "              |    |      |  |       |   +-- current line
-  "              |    |      |  |       +-- total lines in file
-  "              |    |      |  +-- current % into file
-  "              |    |      +-- current syntax in square brackets
-  "              |    +-- current fileformat
-  "              +-- full path to file in the buffer
 
   " Highlight whitespace at eol
   autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
@@ -156,33 +147,6 @@
   au FileType qf nnoremap <buffer><silent> <leader><CR> <C-W><CR><C-W>L:ccl<CR>
 " }
 
-" Plugins {
-  " Toggle NERDTree
-  nnoremap <silent> <C-N> :NERDTreeFind<CR>
-  let NERDTreeShowHidden=1          " Show hidden files
-  let NERDTreeQuitOnOpen=1          " Quit NERDTree after opening file
-
-  " Search for word under the cursor
-  nnoremap <silent> <C-G> :Grep<CR><CR><CR>
-  let Grep_Default_Options='-Irnis' " Default options for grep
-
-  " Scrolling with fixed current buffer position
-  let g:bufferline_rotate = 2
-" }
-
-" Syntastic {
-  " Add error message to status line
-  set statusline+=%#warningmsg#
-  set statusline+=%{SyntasticStatuslineFlag()}
-  set statusline+=%*
-
-  " Let syntastic put errors in location-list
-  let g:syntastic_always_populate_loc_list=1
-  let g:syntastic_auto_loc_list=0   " Don't enable location-list automatically
-  let g:syntastic_check_on_open=1   " Check syntax on Buffer open
-  let g:syntastic_check_on_wq=0     " Check syntax on Buffer write
-" }
-
 " Cygwin {
   " Setup block cursor
   if has("win32unix")
@@ -191,4 +155,26 @@
     let &t_EI.="\e[1 q"
     let &t_te.="\e[0 q"
   endif
+" }
+
+" Airline/Bufferline {
+  let g:airline_powerline_fonts=1
+  let g:airline_section_a=''
+  let g:airline_theme='badwolf'
+  let g:airline#extensions#tabline#enabled=1
+" }
+
+" NERDTree {
+  " Toggle NERDTree
+  nnoremap <silent> <C-N> :NERDTreeFind<CR>
+  let NERDTreeShowHidden=1          " Show hidden files
+  let NERDTreeQuitOnOpen=1          " Quit NERDTree after opening file
+" }
+
+" Syntastic {
+  " Let syntastic put errors in location-list
+  let g:syntastic_always_populate_loc_list=1
+  let g:syntastic_auto_loc_list=0   " Don't enable location-list automatically
+  let g:syntastic_check_on_open=1   " Check syntax on Buffer open
+  let g:syntastic_check_on_wq=0     " Check syntax on Buffer write
 " }
