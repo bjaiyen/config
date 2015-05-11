@@ -62,13 +62,13 @@
 " }
 
 " Appearance {
-  set t_Co=256                      " Enable 256 colors
   colorscheme desert                " Set colorscheme
   set background=dark               " Tell vim background is dark
   set colorcolumn=80                " Show red column at 80 characters
   set laststatus=2                  " Always show status line
   set number                        " Line numbers
   set splitright                    " Create new split window on right side
+  set t_Co=256                      " Enable 256 colors
   syntax enable                     " Syntax highlight w/out overriding current
 
   " Highlight whitespace at eol
