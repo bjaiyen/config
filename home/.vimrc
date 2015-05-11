@@ -173,6 +173,11 @@
 " }
 
 " Syntastic {
+  " Add error message to status line
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+
   " Let syntastic put errors in location-list
   let g:syntastic_always_populate_loc_list=1
   let g:syntastic_auto_loc_list=0   " Don't enable location-list automatically
