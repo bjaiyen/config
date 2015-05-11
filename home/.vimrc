@@ -69,6 +69,16 @@
   set splitright                    " Create new split window on right side
   syntax enable                     " Syntax highlight w/out overriding current
 
+  set statusline=%F%=[%{&ff}]%y[%02p%%][%L][%04l,%04v]
+  "              |    |      |  |       |   |    |
+  "              |    |      |  |       |   |    + current column
+  "              |    |      |  |       |   +-- current line
+  "              |    |      |  |       +-- total lines in file
+  "              |    |      |  +-- current % into file
+  "              |    |      +-- current syntax in square brackets
+  "              |    +-- current fileformat
+  "              +-- full path to file in the buffer
+
   " Highlight whitespace at eol
   autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
   autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
