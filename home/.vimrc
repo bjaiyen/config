@@ -11,6 +11,7 @@
   " Keep Plugin commands between vundle#begin/end
   Plugin 'Raimondi/delimitMate'
   "Plugin 'Valloric/YouCompleteMe'
+  Plugin 'bling/vim-bufferline'
   Plugin 'kien/ctrlp.vim'
   Plugin 'milkypostman/vim-togglelist'
   Plugin 'scrooloose/nerdtree'
@@ -69,20 +70,16 @@
   set splitright                    " Create new split window on right side
   syntax enable                     " Syntax highlight w/out overriding current
 
-  set statusline=%F%m%r%h%w[%{&ff}]%y[%02p%%][%L][%04l,%04v]
-  "              | | | | |  |      |  |       |   |    |
-  "              | | | | |  |      |  |       |   |    + current column
-  "              | | | | |  |      |  |       |   |
-  "              | | | | |  |      |  |       |   +-- current line
-  "              | | | | |  |      |  |       +-- total lines in file
-  "              | | | | |  |      |  +-- current % into file
-  "              | | | | |  |      +-- current syntax in square brackets
-  "              | | | | |  |
-  "              | | | | |  +-- current fileformat
-  "              | | | | +-- preview flag in square brackets
-  "              | | | +-- help flag in square brackets
-  "              | | +-- readonly flag in square brackets
-  "              | +-- rodified flag in square brackets
+  set statusline=%F[%{&ff}]%y[%02p%%][%L][%04l,%04v]
+  "              |  |      |  |       |   |    |
+  "              |  |      |  |       |   |    + current column
+  "              |  |      |  |       |   |
+  "              |  |      |  |       |   +-- current line
+  "              |  |      |  |       +-- total lines in file
+  "              |  |      |  +-- current % into file
+  "              |  |      +-- current syntax in square brackets
+  "              |  |
+  "              |  +-- current fileformat
   "              +-- full path to file in the buffer
 
   " Highlight whitespace at eol
