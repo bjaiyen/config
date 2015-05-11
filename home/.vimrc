@@ -11,6 +11,7 @@
   " Keep Plugin commands between vundle#begin/end
   Plugin 'Raimondi/delimitMate'
   "Plugin 'Valloric/YouCompleteMe'
+  Plugin 'kien/ctrlp.vim'
   Plugin 'milkypostman/vim-togglelist'
   Plugin 'scrooloose/nerdtree'
   Plugin 'scrooloose/syntastic'
