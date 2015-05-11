@@ -167,6 +167,9 @@
   " Search for word under the cursor
   nnoremap <silent> <C-G> :Grep<CR><CR><CR>
   let Grep_Default_Options='-Irnis' " Default options for grep
+
+  " Scrolling with fixed current buffer position
+  let g:bufferline_rotate = 2
 " }
 
 " Syntastic {
