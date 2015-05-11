@@ -36,7 +36,7 @@
 
   set autoread                      " Automatically read changed files
   " Check for file changes when cursor moves or every so often
-  autocmd BufEnter,CursorHold,CursorHoldI,CursorMoved,CursorMovedI * :checktime
+  au BufEnter,CursorHold,CursorHoldI,CursorMoved,CursorMovedI * :checktime
 " }
 
 " UI {
@@ -80,14 +80,14 @@
   "              +-- full path to file in the buffer
 
   " Highlight whitespace at eol
-  autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
-  autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
+  au InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
+  au InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
   highlight EOLWS ctermbg=red guibg=red
 
   " Setup title to work with gnu screen
   if &term[:5] == "screen"
     " Change title whenever buffer is entered
-    autocmd BufEnter * let &titlestring = expand("%:t")
+    au BufEnter * let &titlestring = expand("%:t")
     set t_ts=k
     set t_fs=\
   endif
@@ -109,7 +109,7 @@
   set wrap                          " Wrap text in display window
 
   " Set filetype to txt if not already set
-  autocmd BufEnter * if &filetype == "" | setlocal ft=txt | endif
+  au BufEnter * if &filetype == "" | setlocal ft=txt | endif
 " }
 
 " Folding {
