@@ -190,6 +190,9 @@
 
 
 " Plugins
+  " <delimitMate>
+  let delimitMate_expand_cr=1       " Move cursor down to next line on <CR>
+
   " <nerdtree>
   " Toggle NERDTree
   nnoremap <silent> <C-N> :NERDTreeFind<CR>
