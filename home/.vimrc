@@ -197,6 +197,6 @@
   let g:syntastic_check_on_wq=0     " Check syntax on Buffer write
 
   " <vim-buftabline>
-  let g:buftabline_indicators=1
-  let g:buftabline_numbers=1
+  let g:buftabline_indicators=1     " Show buffer state
+  let g:buftabline_numbers=1        " Show buffer number
 " }
