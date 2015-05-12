@@ -199,4 +199,6 @@
   " <vim-buftabline>
   let g:buftabline_indicators=1     " Show buffer state
   let g:buftabline_numbers=1        " Show buffer number
+  hi BufTabLineCurrent ctermbg=lightyellow guibg=lightyellow
+  hi BufTabLineHidden ctermbg=darkblue guibg=darkblue
 " }
