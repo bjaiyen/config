@@ -15,22 +15,28 @@ alias df='df -h'
 alias du='du -h'
 
 # Directory listing
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
+case $OSTYPE in
+linux-gnu|cygwin)
   alias ls='ls -hF  --color=auto --group-directories-first'  # Classify in color
   alias lla='ls -lA --color=auto --group-directories-first'  # Long list all
-else
+  ;;
+*)
   alias ls='ls -hF'   # Classify in color
   alias lla='ls -lA'  # Long list all
-fi
+  ;;
+esac
 
 # Interactive mode
 alias cp='cp -i'
 alias mv='mv -i'
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
+case $OSTYPE in
+linux-gnu|cygwin)
   alias rm='rm -I'
-else
+  ;;
+*)
   alias rm='rm -i'
-fi
+  ;;
+esac
 
 # Misc
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
