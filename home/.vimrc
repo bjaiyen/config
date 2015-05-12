@@ -55,7 +55,7 @@
   set foldnestmax=10                " Deepest fold is 10 levels
 
   " Change color of folds
-  highlight Folded ctermfg=green guifg=green
+  hi Folded ctermfg=green guifg=green
 " }
 
 
@@ -101,7 +101,7 @@
   " Highlight whitespace at eol
   au InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
   au InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
-  highlight EOLWS ctermbg=red guibg=red
+  hi EOLWS ctermbg=red guibg=red
 
   " Set filetype to txt if not already set
   au BufEnter * if &filetype == "" | setlocal ft=txt | endif
