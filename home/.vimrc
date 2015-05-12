@@ -11,6 +11,7 @@
   " Keep Plugin commands between vundle#begin/end
   Plugin 'Raimondi/delimitMate'
   Plugin 'Valloric/YouCompleteMe'
+  Plugin 'ap/vim-buftabline'
   Plugin 'kien/ctrlp.vim'
   Plugin 'milkypostman/vim-togglelist'
   Plugin 'scrooloose/nerdtree'
@@ -194,4 +195,8 @@
   let g:syntastic_auto_loc_list=0   " Don't enable location-list automatically
   let g:syntastic_check_on_open=1   " Check syntax on Buffer open
   let g:syntastic_check_on_wq=0     " Check syntax on Buffer write
+
+  " <vim-buftabline>
+  let g:buftabline_indicators=1
+  let g:buftabline_numbers=1
 " }
