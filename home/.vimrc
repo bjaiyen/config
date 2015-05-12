@@ -30,20 +30,15 @@
 
 " Bookkeeping {
   set autoread                      " Automatically read changed files
+  set backspace=indent,eol,start    " Fix backspace
   set nobackup                      " On file override, replace old backup
   set backupdir=~/.vim/backup       " Backup files location
   set directory=~/.vim/swap         " Directory for swap files
-  set noswapfile                    " Create swap file with incremental changes
-  set writebackup                   " On file override, do temporary backup
-" }
-
-
-" UI {
-  set backspace=indent,eol,start    " Fix backspace
   set hidden                        " Lets you switch buffers w/out saving
   set history=1000                  " Keep longer history
-  set showmode                      " Show which mode you are in (e.g. paste)
   set splitright                    " Create new split window on right side
+  set noswapfile                    " Create swap file with incremental changes
+  set writebackup                   " On file override, do temporary backup
 
   " Makes vim autocomplete behave like bash autocomplete
   set wildmenu
@@ -51,11 +46,12 @@
 " }
 
 
-" Appearance {
+" UI {
   colorscheme desert                " Set colorscheme
   set background=dark               " Tell vim background is dark
   set colorcolumn=80                " Show red column at 80 characters
   set number                        " Line numbers
+  set showmode                      " Show which mode you are in (e.g. paste)
   set title                         " Show title at top of window
   syntax enable                     " Syntax highlight w/out overriding current
 " }
@@ -94,10 +90,6 @@
   set incsearch                     " Incremental searching
   set smartcase                     " Cap letter means pattern is case sensitive
   set tags=./tags;                  " Search ./ then upwards until root for tags
-
-  " Follow `smartcase` when searching using * or #
-  "nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
-  "nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
 " }
 
 
@@ -126,16 +118,16 @@
   " Map ctrl-j to right arrow in insert mode
   inoremap <silent> <C-J> <RIGHT>
 
+  " Buffer switching
+  nnoremap <silent> <C-H> :bp<CR>
+  nnoremap <silent> <C-J> :bn<CR>
+
   " Toggle paste
   nnoremap <F2> :set invpaste paste?<CR>
   set pastetoggle=<F2>
 
   " Toggle spellcheck
   nnoremap <silent> <F7> :setlocal spell! spelllang=en_us<CR>
-
-  " Buffer switching
-  nnoremap <silent> <C-H> :bp<CR>
-  nnoremap <silent> <C-J> :bn<CR>
 " }
 
 
