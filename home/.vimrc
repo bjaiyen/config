@@ -46,14 +46,15 @@
 " }
 
 
-" UI {
-  colorscheme desert                " Set colorscheme
-  set background=dark               " Tell vim background is dark
-  set colorcolumn=80                " Show red column at 80 characters
-  set number                        " Line numbers
-  set showmode                      " Show which mode you are in (e.g. paste)
-  set title                         " Show title at top of window
-  syntax enable                     " Syntax highlight w/out overriding current
+" Folding {
+  set nofoldenable                  " Don't fold by default
+  set foldignore=                   " Ignore default nearby folding with #
+  set foldlevel=1                   " Default fold level
+  set foldmethod=indent             " Fold based on indent
+  set foldnestmax=10                " Deepest fold is 10 levels
+
+  " Change color of folds
+  highlight Folded ctermfg=green guifg=green
 " }
 
 
@@ -73,23 +74,22 @@
 " }
 
 
-" Folding {
-  set nofoldenable                  " Don't fold by default
-  set foldignore=                   " Ignore default nearby folding with #
-  set foldlevel=1                   " Default fold level
-  set foldmethod=indent             " Fold based on indent
-  set foldnestmax=10                " Deepest fold is 10 levels
-
-  " Change color of folds
-  highlight Folded ctermfg=green guifg=green
-" }
-
-
 " Searching {
   set ignorecase                    " Ignore case while searching
   set incsearch                     " Incremental searching
   set smartcase                     " Cap letter means pattern is case sensitive
   set tags=./tags;                  " Search ./ then upwards until root for tags
+" }
+
+
+" UI {
+  colorscheme desert                " Set colorscheme
+  set background=dark               " Tell vim background is dark
+  set colorcolumn=80                " Show red column at 80 characters
+  set number                        " Line numbers
+  set showmode                      " Show which mode you are in (e.g. paste)
+  set title                         " Show title at top of window
+  syntax enable                     " Syntax highlight w/out overriding current
 " }
 
 
