@@ -129,6 +129,9 @@
 
   " Toggle spellcheck
   nnoremap <silent> <F7> :setlocal spell! spelllang=en_us<CR>
+
+  " Exit out of insert mode
+  inoremap jk <Esc>
 " }
 
 
