@@ -14,6 +14,7 @@
   Plugin 'ap/vim-buftabline'
   Plugin 'kien/ctrlp.vim'
   Plugin 'milkypostman/vim-togglelist'
+  Plugin 'moll/vim-bbye'
   Plugin 'scrooloose/nerdtree'
   Plugin 'scrooloose/syntastic'
   Plugin 'tpope/vim-fugitive'
@@ -191,6 +192,10 @@
   nnoremap <silent> <C-N> :NERDTreeFind<CR>
   let NERDTreeShowHidden=1          " Show hidden files
   let NERDTreeQuitOnOpen=1          " Quit NERDTree after opening file
+
+  " <bbye>
+  " Close buffer
+  nnoremap <Leader>q :Bdelete<Cr>
 
   " <syntastic>
   " Let syntastic put errors in location-list
