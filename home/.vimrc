@@ -195,7 +195,7 @@
 
   " <bbye>
   " Close buffer
-  nnoremap <Leader>q :Bdelete<Cr>
+  nnoremap <Leader>bd :Bdelete<Cr>
 
   " <syntastic>
   " Let syntastic put errors in location-list
