@@ -111,6 +111,9 @@
   au FileType qf nnoremap <buffer><silent> <CR> <CR>:ccl<CR>
   au FileType qf nnoremap <buffer><silent> <C-W><CR> <C-W><CR>:ccl<CR>
   au FileType qf nnoremap <buffer><silent> <leader><CR> <C-W><CR><C-W>L:ccl<CR>
+
+  " Sync syntax from start of file
+  autocmd BufEnter * :syntax sync fromstart
 " }
 
 
