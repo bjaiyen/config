@@ -20,7 +20,7 @@ mkdir -p .vim/swap
 # Symlink folders
 for folder in $(ls -A "$SCRIPT_DIR/.vim")
 do
-  echo $file
+  echo $folder
   ln -fsn $SCRIPT_DIR/.vim/$folder $HOME/.vim/$folder
 done
 
