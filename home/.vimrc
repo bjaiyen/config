@@ -223,5 +223,5 @@
   " Let syntastic put errors in location-list
   let g:syntastic_always_populate_loc_list=1
   let g:syntastic_auto_loc_list=0   " Don't enable location-list automatically
-  "let g:syntastic_check_on_open=1   " Check syntax on Buffer open/save
+  let g:syntastic_check_on_open=1   " Check syntax on Buffer open/save
 " }
