@@ -10,10 +10,10 @@
 
   " Keep Plugin commands between vundle#begin/end
   Plugin 'Raimondi/delimitMate'
+  Plugin 'Valloric/ListToggle'
   Plugin 'Valloric/YouCompleteMe'
   Plugin 'ap/vim-buftabline'
   Plugin 'kien/ctrlp.vim'
-  Plugin 'milkypostman/vim-togglelist'
   Plugin 'moll/vim-bbye'
   Plugin 'scrooloose/nerdtree'
   Plugin 'scrooloose/syntastic'
@@ -107,10 +107,8 @@
   " Set filetype to txt if not already set
   au BufEnter * if &filetype == "" | setlocal ft=txt | endif
 
-  " Open quickfix selection (in split) and close quickfix window
-  au FileType qf nnoremap <buffer><silent> <CR> <CR>:ccl<CR>
-  au FileType qf nnoremap <buffer><silent> <C-W><CR> <C-W><CR>:ccl<CR>
-  au FileType qf nnoremap <buffer><silent> <leader><CR> <C-W><CR><C-W>L:ccl<CR>
+  " Open selection and close quickfix window/location list
+  au FileType qf nnoremap <buffer><silent> <CR> <CR>:windo ccl\|lcl<CR>
 
   " Sync syntax from start of file
   autocmd BufEnter * :syntax sync fromstart
