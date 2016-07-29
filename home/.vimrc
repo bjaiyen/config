@@ -190,27 +190,38 @@
 
 
 " Plugins
-  " <nerdtree>
-  " Toggle NERDTree
-  nnoremap <silent> <C-N> :NERDTreeFind<CR>
-  let NERDTreeShowHidden=1          " Show hidden files
-  let NERDTreeQuitOnOpen=1          " Quit NERDTree after opening file
+  " <Raimondi/delimitMate>
+  " Expand carriage return
+  let delimitMate_expand_cr = 1
 
-  " <bbye>
-  " Close buffer
-  nnoremap <Leader>bd :Bdelete<Cr>
-
-  " <syntastic>
-  " Let syntastic put errors in location-list
-  let g:syntastic_always_populate_loc_list=1
-  let g:syntastic_auto_loc_list=0   " Don't enable location-list automatically
-  let g:syntastic_check_on_open=1   " Check syntax on Buffer open/save
-
-  " <vim-buftabline>
+  " <ap/vim-buftabline>
   let g:buftabline_indicators=1     " Show buffer state
   let g:buftabline_numbers=1        " Show buffer number
   hi BufTabLineCurrent ctermbg=lightyellow guibg=lightyellow
         \ ctermfg=black guifg=black
   hi BufTabLineHidden ctermbg=darkblue guibg=darkblue ctermfg=black guifg=black
         \ ctermfg=black guifg=black
+
+  "<kien/ctrlp.vim>"
+  " Ignore class files
+  let g:ctrlp_custom_ignore = {
+    \ 'file': '\v\.(class)$'
+    \ }
+
+  " <moll/vim-bbye>
+  " Close buffer
+  nnoremap <Leader>bd :Bdelete<Cr>
+
+  " <scrooloose/nerdtree>
+  " Toggle NERDTree
+  nnoremap <silent> <C-N> :NERDTreeFind<CR>
+  let NERDTreeShowHidden=1          " Show hidden files
+  let NERDTreeQuitOnOpen=1          " Quit NERDTree after opening file
+  let NERDTreeWinSize=60            " Make NERDTree window larger
+
+  " <scrooloose/syntastic>
+  " Let syntastic put errors in location-list
+  let g:syntastic_always_populate_loc_list=1
+  let g:syntastic_auto_loc_list=0   " Don't enable location-list automatically
+  "let g:syntastic_check_on_open=1   " Check syntax on Buffer open/save
 " }
