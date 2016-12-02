@@ -96,8 +96,8 @@
 
 
 " Auto Commands {
-  " Check for file changes when cursor moves or every so often
-  au BufEnter,CursorHold,CursorHoldI,CursorMoved,CursorMovedI * :checktime
+  " Check for file changes every so often
+  au BufEnter,CursorHold * :checktime
 
   " Highlight whitespace at eol
   au InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
