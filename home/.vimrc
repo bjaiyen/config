@@ -200,7 +200,7 @@
   hi BufTabLineHidden ctermbg=darkblue guibg=darkblue ctermfg=black guifg=black
         \ ctermfg=black guifg=black
 
-  "<kien/ctrlp.vim>"
+  " <kien/ctrlp.vim>"
   " Ignore class files
   let g:ctrlp_custom_ignore = {
     \ 'file': '\v\.(class)$'
