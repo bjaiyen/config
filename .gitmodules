@@ -2,5 +2,5 @@
 	path = home/.vim/bundle/Vundle.vim
 	url = https://github.com/gmarik/Vundle.vim.git
 [submodule "home/.bjaiyen/styleguide"]
-	path = home/.bjaiyen/styleguide
+	path = home/.google/styleguide
 	url = https://github.com/google/styleguide.git
