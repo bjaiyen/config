@@ -13,9 +13,9 @@ do
   fi
 done
 
-mkdir -p .vim
-mkdir -p .vim/backup
-mkdir -p .vim/swap
+mkdir -p $HOME/.vim
+mkdir -p $HOME/.vim/backup
+mkdir -p $HOME/.vim/swap
 
 # Symlink folders
 for folder in $(ls -A "$SCRIPT_DIR/.vim")
@@ -24,4 +24,4 @@ do
   ln -fsn $SCRIPT_DIR/.vim/$folder $HOME/.vim/$folder
 done
 
-ln -fsn $SCRIPT_DIR/.bjaiyen $HOME/.bjaiyen
+ln -fsn $SCRIPT_DIR/.google/styleguide/google_python_style.vim $HOME/.vim/ftplugin/python.vim
